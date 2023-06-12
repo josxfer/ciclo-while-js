@@ -39,7 +39,44 @@ if (opcion === 1) {
         words = prompt("Ingresa una letra o palabra, fara finalizar no escribas nada y presiona enter");        
     }
     console.log(frase);
-    
+}else if (opcion === 5) {
+    let dia = prompt("Escribe un día de la semana:");
+    dia = dia.toUpperCase();
+    let validacion = true;
+    while (validacion) {
+        if (dia === "LUNES") {
+            alert("¡A trabajar vago!");
+            dia = prompt("Ingresa un día de la semana:");
+            dia = dia.toUpperCase();
+        }else if (dia === "MARTES") {
+            alert("¡Estudie vago!");
+            dia = prompt("Ingresa un día de la semana:");
+            dia = dia.toUpperCase();
+        }else if (dia === "MIERCOLES") {
+            alert("¡Haga algo vagoooo!");
+            dia = prompt("Ingresa un día de la semana:");
+            dia = dia.toUpperCase();
+        }else if (dia === "JUEVES") {
+            alert("Yo no lo crié");
+            dia = prompt("Ingresa un día de la semana:");
+            dia = dia.toUpperCase();
+        }else if (dia === "VIERNES") {
+            alert("Sólo piensa en rumba, vagoooo");
+            dia = prompt("Ingresa un día de la semana:");
+            dia = dia.toUpperCase();
+        }else if (dia === "SABADO") {
+            alert("Sí, hoy tambien se trabaja");
+            dia = prompt("Ingresa un día de la semana:");
+            dia = dia.toUpperCase();
+        }else if (dia === "DOMINGO") {
+            alert("Ve a descansar");
+            validacion = false;
+        }else{
+            alert("Escribe bien");
+            dia = prompt("Ingresa un día de la semana:");
+            dia = dia.toUpperCase();
+        }
+    }
 }
     else{
     console.log("Ingresa una opción válida");
